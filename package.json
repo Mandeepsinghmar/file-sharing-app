@@ -1,5 +1,5 @@
 {
-  "name": "save-walter-x",
+  "name": "share-bro",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "10.1.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-dropzone": "^11.3.2"
   },
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.18",
