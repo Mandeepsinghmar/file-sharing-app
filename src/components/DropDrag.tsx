@@ -29,7 +29,6 @@ const {getRootProps,getInputProps , isDragAccept, isDragReject} = useDropzone({
         </>
     )
 }
-
            
             </div>
         </div>
