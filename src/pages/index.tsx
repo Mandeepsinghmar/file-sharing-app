@@ -1,10 +1,11 @@
 import DragDrop from "@components/DropDrag";
+import RenderFile from "@components/RenderFile";
 import { useState } from "react";
 
 export default function Home() {
   const [file,setFile] = useState(null)
   return (
-    <div className="h-screen bg-gray-800 p-5 ">
+    <div className=" bg-gray-800 p-5 ">
      <h1 className='mx-1 my-2 bg-white text-black w-max font-extrabold text-2xl  p-2 px-4 text-lg rounded-md'>shareBro</h1>
      <div className='flex flex-col items-center justify-center'>
        <div>
@@ -17,13 +18,20 @@ export default function Home() {
        </div>
 
         {/* render file  */}
-        <p className='text-black mt-2'>{
-         file?.name
-       }</p>
+        { file &&
+      <RenderFile file={{
+      format: file.type.split("/")[1],
+       name:file.name,
+      sizeInBytes:file.size
+      }}/>
+        }
+      
+    
        
      
      
       {/* upload button  */}
+      <button className='p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none'>Upload</button>
        </div>
     
      </div>
