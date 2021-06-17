@@ -42,14 +42,14 @@ const showDragDrop = ()=>{
 
   return (
     <div className=" bg-gray-900 p-5 ">
-     <h1 className='mx-1 my-2 bg-white text-black w-max font-extrabold text-2xl  p-2 px-4 text-lg rounded-md'>shareBro</h1>
-     <div className='flex flex-col items-center justify-center'>
+     <h1 className='mx-1 my-2 bg-gray-800 w-max font-extrabold text-2xl  p-2 px-4 text-lg rounded-md'>shareBro</h1>
+     <div className='flex flex-col items-center justify-center mt-14 '>
        <div>
          <h1 className='my-4 text-2xl font-medium '>Share your files easily by using shareBro!</h1>
        </div>
        {/* drag and drop  */}
 
-       <div className='bg-white text-center'>
+       <div className='bg-white text-center rounded-md'>
          {
            !downloadPageLink &&    <div className='max-w-xl'>
            <DragDrop setFile={setFile}/>
@@ -67,13 +67,13 @@ const showDragDrop = ()=>{
         }
     
       {/* upload button  */}
-      {!downloadPageLink && file &&  <button className='p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none' onClick={handleUpload}>{uploadState}</button>}
+      {!downloadPageLink && file &&  <button className='button' onClick={handleUpload}>{uploadState}</button>}
      
 {
   downloadPageLink && (
     <>
       <DownloadFile  downloadPageLink={downloadPageLink}/>
-      <button className='p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none' onClick={showDragDrop} >Upload New File</button>
+      <button className='button' onClick={showDragDrop} >Upload New File</button>
  </>
   )
 }

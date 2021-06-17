@@ -12,7 +12,7 @@ const {getRootProps,getInputProps , isDragAccept, isDragReject} = useDropzone({
     accept:'image/jpeg,image/png/audio/mpeg'
 })  
     return (
-        <div className='p-4 bg-gray-800 max-w-xl '>
+        <div className='p-4 bg-gray-800  '>
             <div {...getRootProps()} className={'w-30 h-60 focus:outline-none cursor-pointer border-2 border-dashed rounded-xl p-4 flex flex-col items-center justify-center '
         + (isDragReject === true ? 'border-red-500' : '')
         + (isDragAccept === true ? 'border-green-500' : '')
