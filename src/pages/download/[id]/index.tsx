@@ -14,7 +14,7 @@ import { useState } from "react";
         if(downloadState === 'Downloading...') return 
         setDownloadDone(false)
         setDownloadState('Downloading...')
-        const {data}  = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_ENDPOINT}/api/files/${file.id}/download`,{responseType:'blob'})
+        const {data}  = await axios.get(`https://sharebro-backend.herokuapp.com/api/files/${file.id}/download`,{responseType:'blob'})
         fileDownload(data, file.name)
         if(data){
             setDownloadState('Download')
