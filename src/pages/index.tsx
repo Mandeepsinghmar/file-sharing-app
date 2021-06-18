@@ -20,7 +20,7 @@ const handleUpload = async () => {
   const {data} = await axios({
     method: 'post',
      data:formData, 
-     url:`${process.env.NEXT_PUBLIC_API_BASE_ENDPOINT}/api/files/upload`,
+     url:`${process.env.API_BASE_ENDPOINT}/api/files/upload`,
      headers:{
      'Content-Type':'multipart/form-data'
   },
@@ -57,7 +57,7 @@ const showDragDrop = ()=>{
       <h1 className='mx-1 mt-1 w-max font-extrabold text-2xl  p-2 px-4 text-lg '> <span className='-mr-2'>🔰</span> ShareBro</h1>
       </div>
     
-     <div className='flex flex-col items-center justify-center mt-6'>
+     <div className='flex flex-col items-center justify-center mt-10'>
        <div className='flex flex-col justify-center items-center mb-4'>
         <p className='font-extrabold text-5xl'>File sharing</p>
         <p className='font-black text-5xl text-blue-700'>made easy</p>
