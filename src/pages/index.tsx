@@ -20,7 +20,7 @@ const handleUpload = async () => {
   const {data} = await axios({
     method: 'post',
      data:formData, 
-     url:'https://sharebro-backend.herokuapp.com//api/files/upload',
+     url:'https://sharebro-backend.herokuapp.com/api/files/upload',
      headers:{
      'Content-Type':'multipart/form-data'
   },
