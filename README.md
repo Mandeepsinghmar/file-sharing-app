@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ShareBro
+This is a file sharing application, where file sharing is very easy. In just three steps you can share your file select,upload and share.
 
-## Getting Started
+## Project overview:
+Deployed version - https://file-sharing-app.vercel.app/
 
-First, run the development server:
+## Features: 
+1. User can select file or drag and drop
+2. Upload file on our server
+3. share the downloadable file link or qr code 
+4. Other person can download file
+5. All file type supported
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technologies:
+### Frontend
+* Typescript, NextJs, ReactJs and CSS
+* Deployed on vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Backend 
+* Mongodb, Nodejs, Expressjs and Typescript
+* Deployed on heroku
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Frontend Npm libraries
+* axios
+* js-file-download
+* react-qr-code
+* react-dropzone
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Backend Npm libraries
+* cors
+* cloudinary
+* dotenv
+* mongoose
+* multer
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
